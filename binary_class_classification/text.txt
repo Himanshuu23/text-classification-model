@@ -1,0 +1,19 @@
+(1) Downloading and extracting the dataset
+(2) Splitting into training, testing and validating
+(3) converting the text dataset from text -> (text, label)
+(4) standarization and vectorization -> converting the dataset from text into sequence of integers
+    since neural networks can't understand raw text so we map words to integers
+(5) model learns the vocabulary from the training data
+(6) preparing dataset for training :- (i) mapping words to integer sequences (ii) caching + prefetching - optimizing pipeline for faster training
+(7) Building the Model :- 
+    - embedding => converts word IDs (indices) to 16 dimensional vectors
+    - dropout => preventing overfitting (80-20 split)
+    - globalaveragepooling1d => averages word embeddings -> single vector per review 
+    - dense + signoid => probability
+(8) Training the Model - (i) binary crossentropy - loss for 2 (binary) classification (ii) adam optimizer
+(9) Evaluating loss, accuracy plots for each epoch and comparing training and validation states
+(10 Exporting model - including the vectorization inside the model here then
+
+Results 
+Loss:  0.3155457675457001
+Accuracy:  0.8709200024604797
