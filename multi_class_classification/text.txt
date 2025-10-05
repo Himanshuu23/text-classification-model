@@ -1,0 +1,2 @@
+improved accuracy by 10% migrating from GlobalAveragePooling1D --> LSTM
+Due -- using GloVe embedding to improve
